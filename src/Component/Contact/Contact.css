@@ -1,0 +1,64 @@
+/* styles.css */
+
+.progress-container {
+    display: flex;
+    justify-content: flex-start;
+    /* Align the text to the left */
+    align-items: flex-start;
+    /* Align items to the top */
+ 
+    /* Full screen height */
+    padding-left: 5%;
+    /* Add some spacing on the left */
+    background-color: #ffffff;
+    /* White background */
+    padding-top: 5%;
+    border-bottom: 1px solid black;
+}
+
+.text-wrapper {
+    text-align: left;
+    /* Align all text to the left */
+    margin: 0;
+    /* Remove extra margins */
+}
+
+.ready-text {
+    font-size: 62px;
+    /* Adjust font size to match the design */
+    font-weight: 400;
+    /* Regular weight */
+    color: #000000;
+    /* Black text */
+    margin: 0 0 10px 0;
+    /* Add minimal space below "Ready to make" */
+}
+
+.progress-text {
+    font-size: 80px;
+    /* Slightly reduce the font size for "progress?" */
+    font-weight: 700;
+    /* Bold font */
+    font-style: italic;
+    /* Italic style */
+    margin: 0;
+    /* Remove extra margins */
+    position: relative;
+    color: #000000;
+    /* Black text */
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    /* Adjust the underline position closer */
+    height: 6px;
+    /* Reduce the underline thickness */
+    background-color: #d3d3f3;
+    /* Light blue underline */
+    z-index: -1;
+    /* Place the underline behind the text */
+}

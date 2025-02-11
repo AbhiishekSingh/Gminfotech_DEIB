@@ -1,0 +1,103 @@
+/* Help Container */
+.help-container {
+    margin: 0 5%;  /* Reduced margins to ensure the container fits on smaller screens */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;  /* Let the container height adjust based on content */
+    background-color: #e0e4ff;
+    border-radius: 15px;
+    padding: 20px;  /* Add some padding inside the container */
+    box-sizing: border-box; /* Ensure padding doesn't affect the container's width */
+}
+
+/* Help Box */
+.help-box {
+    background: #e0e4ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;  /* Limit width on large screens for better alignment */
+    width: 100%;  /* Allow it to be responsive */
+}
+
+/* Title Styling */
+.help-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;  /* For better readability */
+}
+
+/* Text Styling */
+.help-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Button Styling */
+.help-button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.help-button:hover {
+    background-color: #444;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium-sized screens like tablets */
+@media (max-width: 768px) {
+    .help-container {
+        margin: 0 10%;  /* Adjust margin to fit smaller screens */
+        padding: 15px;  /* Reduce padding to prevent content from being cramped */
+    }
+
+    .help-title {
+        font-size: 22px;  /* Slightly smaller title on tablets */
+    }
+
+    .help-text {
+        font-size: 14px;  /* Smaller font size on tablets */
+    }
+
+    .help-button {
+        padding: 8px 16px;  /* Adjust button padding for smaller screens */
+    }
+}
+
+/* For smaller screens like mobile phones */
+@media (max-width: 480px) {
+    .help-container {
+        margin: 0 5%;  /* Reduced margins for very small screens */
+        padding: 10px;  /* Reduced padding */
+    }
+
+    .help-box {
+        padding: 15px;  /* Reduce padding inside the help box */
+    }
+
+    .help-title {
+        font-size: 20px;  /* Further reduce title font size for small screens */
+    }
+
+    .help-text {
+        font-size: 12px;  /* Reduce text size for mobile */
+    }
+
+    .help-button {
+        font-size: 14px;  /* Reduce font size of button */
+        padding: 8px 16px;  /* Adjust button padding */
+        width: 100%;  /* Make the button fill the width of the container */
+    }
+}

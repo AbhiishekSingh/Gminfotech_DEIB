@@ -1,0 +1,192 @@
+/* General Footer Styling */
+.footer {
+    background-color: #22543d; /* Dark green */
+    color: #ffffff;
+    width: 100%;
+    height: auto; /* Full width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    padding: 40px 20px; /* Added padding for better spacing */
+    overflow: hidden;
+    box-sizing: border-box; /* Ensure padding and border don't affect the width */
+}
+
+/* Center Message */
+.center-message {
+    text-align: center;
+    margin-bottom: 20px; /* Increased spacing to ensure content doesn't stick to footer */
+}
+
+.tagline {
+    font-size: 2.5rem; /* Reduced font size for better readability */
+    font-weight: 400;
+    margin: 0;
+    color: #ffffff;
+    margin-top: 40px; /* Reduced top margin */
+    line-height: 1.3;
+}
+
+.impact {
+    font-size: 2rem; /* Reduced font size for better responsiveness */
+    font-weight: 700;
+    margin: 10px 0;
+    color: #ffffff;
+    font-family: Crusellia, serif;
+}
+
+.impact span {
+    color: #fffae3;
+    font-style: italic;
+}
+
+.partner-button {
+    background-color: #fffae3; /* Light yellow */
+    color: #22543d; /* Dark green */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.partner-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Links */
+.main-Container1 {
+    display: flex;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the links horizontally */
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    box-sizing: border-box; /* Ensure no overflow */
+}
+
+.footer-links,
+.footer-meta-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center; /* Align links to the center for all screen sizes */
+}
+
+.footer-links a,
+.footer-meta-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjusted font size */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-meta-links a:hover {
+    color: #b3d7c8; /* Light green */
+}
+
+/* Copyright Section */
+.copyright {
+    font-size: 0.8rem;
+    color: #d4d4d4;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Chat Icon */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-button {
+    background-color: #6366f1; /* Purple */
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 15px 10px; /* Reduced padding for smaller screens */
+    }
+
+    .tagline {
+        font-size: 2rem; /* Reduced tagline font size for mobile */
+        margin-top: 20px;
+    }
+
+    .impact {
+        font-size: 1.8rem; /* Slightly smaller font size for mobile */
+    }
+
+    .footer-links-container {
+        flex-direction: column; /* Stack the footer links vertically on smaller screens */
+        align-items: center;
+        gap: 15px; /* Adjusted gap */
+    }
+
+    .footer-links,
+    .footer-meta-links {
+        justify-content: center;
+    }
+
+    .chat-icon {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .chat-button {
+        font-size: 1rem; /* Reduced font size */
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tagline {
+        font-size: 1.8rem; /* Further reduce font size for very small screens */
+    }
+
+    .impact {
+        font-size: 1.6rem; /* Further reduce font size for smaller screens */
+    }
+
+    .footer-links-container {
+        gap: 10px;
+    }
+}

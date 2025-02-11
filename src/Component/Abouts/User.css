@@ -1,0 +1,66 @@
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 210px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.role {
+    font-size: 14px;
+    color: #666;
+}
+
+.expand-btn {
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.details {
+    font-size: 14px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 100%;
+    border: 0.5px solid #ddd;
+    margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

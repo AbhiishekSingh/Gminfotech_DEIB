@@ -1,0 +1,160 @@
+/* Container for the entire press section */
+.press-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Horizontal divider line */
+  .press-divider {
+    border: none;
+    height: 2px;
+    background: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Title of the Press section */
+  .press-title {
+    font-weight: 100;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Press grid (flexible grid with multiple columns) */
+  .press-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(250px, auto);  /* Ensure rows are flexible */
+  }
+  
+  /* Individual press card */
+  .press-card {
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .press-card:hover {
+    transform: translateY(-5px);  /* Slight hover effect */
+  }
+  
+  /* Image styling inside each press card */
+  .press-image {
+    width: 100%;
+    max-width: 100%;  /* Ensures the image fits well */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  /* Source section of the press card */
+  .press-source {
+    font-size: 12px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Source image styling */
+  .press-source img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Headline inside each press card */
+  .press-headline {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Button inside each press card */
+  .press-button {
+    background-color: #006400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  .press-button:hover {
+    background-color: #004d00;
+  }
+  
+  /* Media Query for Tablet and Below (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .press-grid {
+      grid-template-columns: repeat(2, 1fr);  /* 2 columns for tablets */
+    }
+  
+    .press-title {
+      font-size: 22px;
+    }
+  
+    .press-headline {
+      font-size: 14px;
+    }
+  
+    .press-button {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Media Query for Mobile (max-width: 768px) */
+  @media (max-width: 768px) {
+    .press-grid {
+      grid-template-columns: 1fr;  /* Single column on mobile */
+    }
+  
+    .press-title {
+      font-size: 20px;
+    }
+  
+    .press-headline {
+      font-size: 16px;
+    }
+  
+    .press-button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Media Query for Very Small Screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .press-title {
+      font-size: 18px;
+    }
+  
+    .press-card {
+      padding: 15px;
+    }
+  
+    .press-headline {
+      font-size: 14px; /* Even smaller headlines on tiny screens */
+    }
+  
+    .press-button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  
