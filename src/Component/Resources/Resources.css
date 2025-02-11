@@ -5,6 +5,7 @@
   flex-direction: column;  /* Changes to column layout on smaller screens */
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 40px 20px; /* Reduced padding for smaller screens */
 }
 

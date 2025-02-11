@@ -4,7 +4,7 @@
     margin: 0 auto; /* Center the section */
     text-align: center; /* Center the text */
     padding: 40px;
-    max-width: 1200px; /* Limit width of the section */
+    max-width: 100%; /* Limit width of the section */
 }
 
 .team-heading {

@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@ body {
 }
 
 /* DEI Container */
-.dei-container {
+.service-dei-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -19,19 +18,20 @@ body {
     background-color: white;
     padding: 0 100px;
     flex-wrap: wrap;
+    width: 100%; /* Ensure container takes full width */
 }
 
-.dei-content {
+.service-dei-content {
     max-width: 600px;
 }
 
-.dei-heading {
+.service-dei-heading {
     font-size: 64px;
     font-weight: 400;
     color: black;
 }
 
-.dei-highlight {
+.service-dei-highlight {
     font-family: "Brush Script MT", cursive;
     font-size: 80px;
     font-weight: bold;
@@ -40,7 +40,7 @@ body {
     display: inline-block;
 }
 
-.dei-highlight::after {
+.service-dei-highlight::after {
     content: "";
     position: absolute;
     left: 0;
@@ -50,7 +50,7 @@ body {
     background-color: #b0b0d6;
 }
 
-.dei-description {
+.service-dei-description {
     font-size: 16px;
     color: black;
     margin-top: 10px;
@@ -58,14 +58,14 @@ body {
 }
 
 /* Image Adjustment */
-.image1 {
+.service-image1 {
     margin-left: 50px;
-    max-width: 100%;
+    width: 100%; /* Ensures image takes full width */
     height: auto;
 }
 
 /* DEI Assessment */
-.deib-container {
+.service-deib-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -73,27 +73,28 @@ body {
     background-color: white;
     padding: 0 150px;
     flex-wrap: wrap;
+    width: 100%; /* Ensure container takes full width */
 }
 
-.deib-content {
+.service-deib-content {
     max-width: 450px;
 }
 
-.deib-title {
+.service-deib-title {
     font-size: 24px;
     font-weight: bold;
     color: black;
     margin-bottom: 15px;
 }
 
-.deib-description {
+.service-deib-description {
     font-size: 16px;
     color: black;
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.deib-button {
+.service-deib-button {
     background-color: #d0d2f0;
     border: none;
     padding: 12px 24px;
@@ -105,122 +106,123 @@ body {
     transition: background 0.3s;
 }
 
-.deib-button:hover {
+.service-deib-button:hover {
     background-color: #b0b3e6;
 }
 
 /* What Comes Next */
-.next-container {
-    width: 100%;
+.service-next-container {
+    width: 100%; /* Ensure container takes full width */
     text-align: center;
     padding: 80px 20px;
     background-color: white;
 }
 
-.next-title {
+.service-next-title {
     font-size: 36px;
     font-weight: 300;
     color: black;
     margin-bottom: 20px;
 }
 
-.next-text {
+.service-next-text {
     font-size: 18px;
     color: #333;
     max-width: 700px;
     margin: 0 auto;
 }
-.picture-service-img {
+
+.service-picture-service-img {
     text-align: center; /* Centers the image */
     margin-top: 30px;
+    width: 100%; /* Ensure the parent container takes full width */
 }
 
-.picture-service-img img {
-    width: 100%;
-    max-width: 800px; /* Adjust the maximum size */
+.service-picture-service-img img {
+    width: 100%; /* Ensures image takes full width */
+    max-width: 100%; /* Prevents image from growing beyond container */
     height: auto;
     display: block; /* Remove any space below the image */
     margin: 0 auto; /* Centers the image horizontally */
 }
 
-
-
 /* Mobile Adjustments */
 @media (max-width: 768px) {
-    .dei-container, .deib-container {
+    .service-dei-container, .service-deib-container {
         padding: 20px;
         flex-direction: column;
         align-items: center;
+        width: 100%; /* Ensure containers are full width */
     }
 
-    .dei-heading {
+    .service-dei-heading {
         font-size: 36px;
     }
 
-    .dei-highlight {
+    .service-dei-highlight {
         font-size: 48px;
     }
 
-    .image1 {
+    .service-image1 {
         margin-left: 0;
-        width: 80%;
+        width: 100%; /* Ensures image takes full width */
     }
 
-    .deib-button {
+    .service-deib-button {
         font-size: 16px;
         padding: 10px 20px;
     }
 
-    .next-title {
+    .service-next-title {
         font-size: 28px;
     }
 
-    .next-text {
+    .service-next-text {
         font-size: 16px;
     }
-        .picture-service-img img {
-            max-width: 100%; /* Allow the image to scale down on small screens */
-        }
-   
+
+    .service-picture-service-img img {
+        max-width: 100%; /* Allow the image to scale down on small screens */
+    }
 }
 
 /* Small Screens */
 @media (max-width: 480px) {
-    .dei-heading {
+    .service-dei-heading {
         font-size: 30px;
     }
 
-    .dei-highlight {
+    .service-dei-highlight {
         font-size: 40px;
     }
 
-    .deib-title {
+    .service-deib-title {
         font-size: 20px;
     }
 
-    .deib-description, .dei-description {
+    .service-deib-description, .service-dei-description {
         font-size: 14px;
     }
 
-    .deib-button {
+    .service-deib-button {
         padding: 10px 18px;
         font-size: 12px;
     }
 
-    .next-title {
+    .service-next-title {
         font-size: 24px;
     }
 
-    .next-text {
+    .service-next-text {
         font-size: 14px;
     }
 
-    .image1 {
+    .service-image1 {
         width: 100%;
         margin-left: 0;
     }
-    .picture-service-img img {
+
+    .service-picture-service-img img {
         max-width: 100%; /* Ensure it fills the screen but does not overflow */
     }
-   
 }

@@ -1,6 +1,6 @@
 /* Container for the entire "Approach" section */
 .approach-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 40px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
