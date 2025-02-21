@@ -1,5 +1,5 @@
 import './Belonging.css'
-
+import {Link} from "react-router-dom" 
 function Belonging() {
   return (
     <div className="diversity-container-equity">
@@ -14,10 +14,10 @@ function Belonging() {
             <div className="toggle-switch-equity1">
               <div className="toggle-indicator-equity1"></div>
             </div>
-            <h2 className="title-equity1">Equity
+            <h2 className="title-equity1">Belonging
             </h2>
           </div>
-          <button className="cta-button-equity1">Get in touch</button>
+          <Link to="/Contact" className="cta-button-equity1">Get in touch</Link>
         </div>
 
         {/* Right Section - Testimonial */}

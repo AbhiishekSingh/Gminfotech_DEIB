@@ -6,7 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const assessments = [
   {
     title: "Exactly what we needed to go from good intentions to execution",
-    text: `Peoplism's 360 DEIB assessment was exactly what we needed to go from 
+    text: ` DEIB assessment was exactly what we needed to go from 
       good intentions to execution when it comes to D&I efforts. Our org structure 
       is complicated, and Peoplism was able to completely customize their intake 
       process so that we could have usable insights for all portions of our workforce. 
@@ -17,7 +17,7 @@ const assessments = [
     image: "image1.png",
   },
   {
-    title: "Peoplism's assessment was thorough, insightful, and highly actionable",
+    title: "DEIB Innovation assessment was thorough, insightful, and highly actionable",
     text: `Peoplism's assessment was thorough, insightful, and highly actionable. 
       Their recommendations helped us operationalize our efforts into executable 
       processes and think in new ways about how we approach D&I. As the head of HR, 

@@ -15,7 +15,7 @@ const Header = () => {
       {/* Logo */}
       <div className="nav-logo">
         <img src="/images/dddd.jpeg"  alt="Logo" />
-        <span>DEIB Innovation Lab</span>
+        <span>DEIB Innovation</span>
       </div>
 
       {/* Mobile Menu Toggle */}

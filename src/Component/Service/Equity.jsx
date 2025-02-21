@@ -1,4 +1,5 @@
 import './Equity.css'
+import { Link } from 'react-router-dom'
 
 function Equity() {
   return (
@@ -14,17 +15,19 @@ function Equity() {
             <div className="toggle-switch-equity">
               <div className="toggle-indicator-equity"></div>
             </div>
-            <h2 className="title-equity">Equity
-            </h2>
+            <h2 className="title-equity">Equity</h2>
           </div>
-          <button className="cta-button-equity">Get in touch</button>
+          <Link to="/Contact" className="cta-button-equity">Get in touch</Link>
         </div>
 
         {/* Right Section - Testimonial */}
         <div className="testimonial-card-equity">
           <span className="quote-symbol-equity">"</span>
           <p className="testimonial-text-equity">
-          "Lattice is a Performance Management & Engagement platform used by over 2,000 organizations. We work directly with People Teams, so we recognize how critical it is to have a DEIB lens at all times. We asked Peoplism to create that lens for us— to help us understand how to use Lattice in the most equitable way possible, train our Customer Success Team on these best practices, and provide DEIB resources for our clients and greater community."
+            "Lattice is a Performance Management & Engagement platform used by over 2,000 organizations.
+            We work directly with People Teams, so we recognize how critical it is to have a DEIB lens at all times.
+            We asked Peoplism to create that lens for us— to help us understand how to use Lattice in the most equitable way possible,
+            train our Customer Success Team on these best practices, and provide DEIB resources for our clients and greater community."
           </p>
           <p className="author-name-equity">James Thomas</p>
           <p className="author-role-equity">Director of Recruiting, Everlaw</p>
@@ -37,4 +40,4 @@ function Equity() {
   )
 }
 
-export default Equity
+export default Equity;

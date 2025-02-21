@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Service.css";
 import Home from "../Homes/Home";
 import Assessment from "./Assessment";
@@ -19,11 +20,10 @@ const Service = () => {
           <h1 className="service-dei-heading">
             Your DEI <br /> journey starts <br />
             <span className="service-dei-highlight">here</span>
+            <div className="service-dei-container">From Awareness to Action. From Goals to Growth.</div>
           </h1>
           <p className="service-dei-description">
-            Our most successful clients begin with our DEIB Assessment & Roadmap. 
-            We help you understand how you’re doing across all areas of DEIB, 
-            learn specific actions for improvement, and take the first steps.
+          Creating an <b>Inclusive, High-Performing</b> workplace isn’t just about intention—it’s about <b>strategic action.</b>
           </p>
         </div>
       </div>
@@ -37,16 +37,15 @@ const Service = () => {
             readiness for change. Finally, we work with you to create a comprehensive and long-term plan 
             to drive DEIB forward at your organization.
           </p>
-          <button className="service-deib-button">Partner with us</button>
+          <Link to="/Contact" className="service-deib-button">Partner with us</Link>
         </div>
       </div>
       <Assessment/>
       <div className="service-next-container">
         <h2 className="service-next-title">What comes next</h2>
         <p className="service-next-text">
-          Some clients work to implement their roadmap completely on their own, but most
-          take on a few initiatives themselves, and then turn to our DEI consultants and
-          comprehensive suite of services for expert-led and pressure-tested solutions.
+        Whether you choose to implement the roadmap internally or partner with us for execution, we’ve got you covered <br></br>
+        Our tailored DEIB solutions accelerate progress, ensuring that your strategy doesn’t just sit on paper but drives real, lasting change. Let’s turn your DEI vision into reality—faster & more effectively.
         </p>
       </div>
       <div className="service-picture-service-img">

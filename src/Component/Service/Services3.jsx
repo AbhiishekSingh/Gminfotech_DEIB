@@ -3,21 +3,21 @@ import "./Services3.css";
 
 const services3 = [
   {
-    title: "Hiring Funnel Analysis",
+    title: "Inclusive Leadership Training",
     description:
-      "Understand each stage of your hiring funnel and how it impacts candidates from different demographics.",
+      "Equip managers to lead diverse teams effectively.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Inclusion-Allyship-Workshop.png", 
   },
   {
-    title: "Recruiting & Hiring Redesign",
+    title: "Allyship & Unconscious Bias Training ",
     description:
-      "Attract a more diverse workforce and adopt a less biased hiring process.",
+      "Drive real behavioral change.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Managing-for-Inclusion-Workshops.png", 
   },
   {
-    title: "Undermining Bias in Hiring Training",
+    title: "Neurodiversity & Disability Inclusion ",
     description:
-      "Train hiring managers and interviewers to recognize and challenge common biases in order to consistently hire the best person for the job.",
+      "Build an accessible, accommodating workplace.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Sexual-Harassment-Training.png", 
   },
   {

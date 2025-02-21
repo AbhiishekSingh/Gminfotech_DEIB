@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import Chat from "./Chat";
 
@@ -12,57 +13,54 @@ const Footer = () => {
           <p className="impact">
             <span>impact</span>?
           </p>
-          <button className="partner-button">Partner with us</button>
+          
+          <Link to="/Contact" className="partner-button">Partner with us</Link>
         </div>
        
         <div className="footer-links-container">
         <div className="make-footer-space"> 
         <ul className="footer-links">
-          ©2025 Peoplism, LLC. All rights reserved. | Site by Series Eight
+          ©2025 DEIB Innovation, LLC. All rights reserved. | Site by Series Eight
         </ul>
         </div>
          <div className="make-footer-space"> 
           <ul className="footer-links">
             <li>
-              <a href="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="#resources">Resources</a>
+              <Link to="/resources">Resources</Link>
             </li>
             <li>
-              <a href="#about-us">About us</a>
+              <Link to="/about-us">About us</Link>
             </li>
             <li>
-              <a href="#careers">Careers</a>
+              <Link to="/Career">Careers</Link>
             </li>
             <li>
-              <a href="#impact">Impact</a>
+              <Link to="/impact">Impact</Link>
             </li>
           </ul>
           </div>
           <div className="make-footer-space"> 
           <ul className="footer-meta-links">
             <li>
-              <a href="#terms">Terms & Conditions</a>
+              <Link to="/terms">Terms & Conditions</Link>
             </li>
             <li>
-              <a href="#privacy">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#sitemap">Sitemap</a>
+              <Link to="/sitemap">Sitemap</Link>
             </li>
           </ul>
           </div>
-
-      
-        
       </div>
       <Chat/>
       </div>
-     
     </footer>
   );
 };

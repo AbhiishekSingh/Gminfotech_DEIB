@@ -1,4 +1,5 @@
 /* General Section Styling */
+
 .testimonials-section {
     margin-top: 60px;
     padding: 20px;
@@ -7,7 +8,9 @@
     height: auto;
 }
 
+
 /* Divider */
+
 .divider1 {
     border: none;
     border-top: 1px solid black;
@@ -15,7 +18,9 @@
     margin: 10px auto;
 }
 
+
 /* Header Section */
+
 .header1 {
     display: flex;
     justify-content: space-between;
@@ -49,22 +54,28 @@
     transform: scale(1.2);
 }
 
+
 /* Carousel Container */
+
 .carousel {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    gap: 20px; /* Increased gap for spacing */
+    gap: 20px;
+    /* Increased gap for spacing */
 }
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
+
 /* Testimonial Card */
+
 .testimonial-card {
-    flex: 0 0 350px; /* Adjusted size for better visibility */
+    flex: 0 0 350px;
+    /* Adjusted size for better visibility */
     padding: 20px;
     border-left: 2px solid #ddd;
     display: flex;
@@ -72,22 +83,26 @@
     justify-content: space-between;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added a subtle shadow */
     margin-bottom: 20px;
     height: 300px;
     transition: transform 0.3s ease;
 }
 
 .testimonial-card:hover {
-    transform: translateY(-10px); /* Subtle hover effect */
+    transform: translateY(-10px);
+    /* Subtle hover effect */
 }
 
 .testimonial-card:first-child {
-    border-left: none; /* Remove border for the first card */
+    border-left: none;
+    /* Remove border for the first card */
 }
 
 .testimonial-text {
-    font-size: 18px; /* Slightly reduced for readability */
+    font-size: 18px;
+    /* Slightly reduced for readability */
     font-weight: bold;
     color: #555;
     margin-bottom: 20px;
@@ -98,7 +113,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* Ensures footer sticks to the bottom */
+    margin-top: auto;
+    /* Ensures footer sticks to the bottom */
 }
 
 .user-info {
@@ -131,82 +147,77 @@
     object-fit: contain;
 }
 
+
 /* Media Queries for Responsiveness */
 
+
 /* Mobile Adjustments */
+
 @media (max-width: 768px) {
     .header1 {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 20px;
     }
-
     .title {
         font-size: 18px;
         margin-left: 0;
     }
-
     .arrows {
         margin-top: 10px;
         justify-content: center;
     }
-
     .carousel {
         gap: 15px;
     }
-
     .testimonial-card {
-        flex: 0 0 320px; /* Reduced size for smaller screens */
+        flex: 0 0 320px;
+        /* Reduced size for smaller screens */
         padding: 15px;
         margin-bottom: 20px;
     }
-
     .testimonial-text {
-        font-size: 16px; /* Adjusted text size */
+        font-size: 16px;
+        /* Adjusted text size */
     }
-
     .user-photo {
         width: 40px;
         height: 40px;
     }
-
     .user-name {
         font-size: 14px;
     }
-
     .user-title {
         font-size: 12px;
     }
-
     .company-logo {
         width: 50px;
     }
 }
 
+
 /* Small Mobile Adjustments */
+
 @media (max-width: 480px) {
     .testimonial-card {
-        flex: 0 0 280px; /* Reduced further for very small screens */
+        flex: 0 0 280px;
+        /* Reduced further for very small screens */
         padding: 12px;
     }
-
     .testimonial-text {
-        font-size: 14px; /* Smaller text for very small screens */
+        font-size: 14px;
+        /* Smaller text for very small screens */
     }
-
     .user-photo {
         width: 35px;
         height: 35px;
     }
-
     .user-name {
         font-size: 12px;
     }
-
     .user-title {
         font-size: 10px;
     }
-
     .company-logo {
         width: 40px;
     }

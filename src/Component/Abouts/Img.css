@@ -1,13 +1,17 @@
 /* Container for the entire "Approach" section */
+
 .approach-container {
     max-width: 100%;
     margin: 40px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    text-align: center;  /* Center text for better mobile alignment */
+    text-align: center;
+    /* Center text for better mobile alignment */
 }
 
+
 /* Title styling */
+
 .approach-title {
     font-size: 48px;
     font-weight: normal;
@@ -15,7 +19,9 @@
     margin-bottom: 30px;
 }
 
+
 /* Container for the individual approach items */
+
 .approach-content {
     display: flex;
     flex-wrap: wrap;
@@ -23,15 +29,20 @@
     gap: 20px;
 }
 
+
 /* Individual approach item */
+
 .approach-item {
-    width: 30%;  /* Default width for larger screens */
+    width: 30%;
+    /* Default width for larger screens */
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
 }
 
+
 /* Image styling */
+
 .approach-image {
     width: 100%;
     height: auto;
@@ -39,7 +50,9 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Headings under each image */
+
 .approach-item h3 {
     font-size: 22px;
     font-weight: bold;
@@ -47,7 +60,9 @@
     margin-top: 15px;
 }
 
+
 /* Paragraph styling */
+
 .approach-item p {
     font-size: 16px;
     color: #555;
@@ -55,54 +70,63 @@
     margin-top: 10px;
 }
 
+
 /* Media Queries for smaller screen sizes */
 
+
 /* Tablet view */
+
 @media (max-width: 768px) {
     .approach-title {
-        font-size: 36px;  /* Reduce title font size */
+        font-size: 36px;
+        /* Reduce title font size */
     }
-
     .approach-content {
-        flex-direction: column;  /* Stack items vertically on tablet */
+        flex-direction: column;
+        /* Stack items vertically on tablet */
         align-items: center;
     }
-
     .approach-item {
-        width: 80%;  /* Make items wider for better readability */
-        margin-bottom: 30px;  /* Add spacing between items */
+        width: 80%;
+        /* Make items wider for better readability */
+        margin-bottom: 30px;
+        /* Add spacing between items */
     }
-
     .approach-item h3 {
-        font-size: 20px;  /* Slightly smaller headings */
+        font-size: 20px;
+        /* Slightly smaller headings */
     }
-
     .approach-item p {
-        font-size: 14px;  /* Adjust paragraph font size */
+        font-size: 14px;
+        /* Adjust paragraph font size */
     }
 }
 
+
 /* Mobile view */
+
 @media (max-width: 480px) {
     .approach-title {
-        font-size: 28px;  /* Further reduce title font size */
+        font-size: 28px;
+        /* Further reduce title font size */
     }
-
     .approach-content {
-        flex-direction: column;  /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
         align-items: center;
     }
-
     .approach-item {
-        width: 90%;  /* Ensure items take up most of the width on mobile */
-        margin-bottom: 20px;  /* Add spacing between items */
+        width: 90%;
+        /* Ensure items take up most of the width on mobile */
+        margin-bottom: 20px;
+        /* Add spacing between items */
     }
-
     .approach-item h3 {
-        font-size: 18px;  /* Reduce heading size */
+        font-size: 18px;
+        /* Reduce heading size */
     }
-
     .approach-item p {
-        font-size: 12px;  /* Reduce paragraph size */
+        font-size: 12px;
+        /* Reduce paragraph size */
     }
 }

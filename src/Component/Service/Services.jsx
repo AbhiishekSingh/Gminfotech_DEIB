@@ -3,21 +3,21 @@ import "./Services.css";
 
 const services = [
   {
-    title: "Hiring Funnel Analysis",
+    title: "Inclusive Hiring & Outreach ",
     description:
-      "Understand each stage of your hiring funnel and how it impacts candidates from different demographics.",
+      "Attract, Recruit & Retain top diverse talent.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Undermining-Bias-in-Hiring-Training.png", 
   },
   {
-    title: "Recruiting & Hiring Redesign",
+    title: "Diverse Leadership Development ",
     description:
-      "Attract a more diverse workforce and adopt a less biased hiring process.",
+      "Cultivate a pipeline of future-ready leaders.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Hiring-Funnel-Analysis.png", 
   },
   {
-    title: "Undermining Bias in Hiring Training",
+    title: "Supplier Diversity & Partnerships ",
     description:
-      "Train hiring managers and interviewers to recognize and challenge common biases in order to consistently hire the best person for the job.",
+      "Strengthen your brands impact by partnering with diverse suppliers & supporting inclusive sourcing practices.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Recruiting-Hiring-Design.png", 
   },
 ];

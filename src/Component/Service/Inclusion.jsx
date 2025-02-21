@@ -1,4 +1,5 @@
 import './Inclusion.css'
+import {Link} from "react-router-dom";
 
 function Inclusion() {
   return (
@@ -17,7 +18,7 @@ function Inclusion() {
             <h2 className="title-inclusion">Inclusion
             </h2>
           </div>
-          <button className="cta-button-inclusion">Get in touch</button>
+          <Link to="/Contact" className="cta-button-inclusion">Get in touch</Link>
         </div>
 
         {/* Right Section - Testimonial */}

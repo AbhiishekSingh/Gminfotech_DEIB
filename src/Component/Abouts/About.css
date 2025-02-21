@@ -1,4 +1,5 @@
 /* Container for the "Who We Are" Section */
+
 .who-we-are-container {
     max-width: 100%;
     margin: 40px auto;
@@ -7,13 +8,18 @@
     box-sizing: border-box;
 }
 
+
 /* Title container */
+
 .title-container {
-    text-align: center;  /* Center the title */
+    text-align: center;
+    /* Center the title */
     margin-bottom: 20px;
 }
 
+
 /* Title styling */
+
 .title {
     font-size: 48px;
     font-weight: normal;
@@ -21,26 +27,34 @@
     line-height: 1.2;
 }
 
+
 /* Highlighted text */
+
 .highlight {
     font-style: italic;
     font-weight: bold;
     text-decoration: underline;
-    color: #0066cc;  /* Highlight color */
+    color: #0066cc;
+    /* Highlight color */
 }
 
+
 /* Description styling */
-.description {
-    font-size: 16px;
+
+.about-description {
+    font-size: 20px;
     font-weight: normal;
-    line-height: 1.8;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 90px;
-    text-align: left;  /* Left align for laptops and larger screens */
+    text-align: left;
+    /* Left align for laptops and larger screens */
     color: #555;
 }
 
+
 /* Divider styling */
+
 .divider {
     border: none;
     border-top: 1px solid #ccc;
@@ -48,53 +62,68 @@
     width: 100%;
 }
 
+
 /* Media Query for Tablets */
+
 @media (max-width: 768px) {
     .who-we-are-container {
-        padding: 20px 10px;  /* Reduce padding on smaller screens */
+        padding: 20px 10px;
+        /* Reduce padding on smaller screens */
     }
-
     .title {
-        font-size: 36px;  /* Reduce title font size */
+        font-size: 36px;
+        /* Reduce title font size */
     }
-
     .description {
-        font-size: 14px;  /* Smaller font size */
-        text-align: center;  /* Center-align on smaller screens */
-        margin-right: 0;  /* Remove margin */
+        font-size: 14px;
+        /* Smaller font size */
+        text-align: center;
+        /* Center-align on smaller screens */
+        margin-right: 0;
+        /* Remove margin */
     }
 }
+
 
 /* Media Query for Laptop / Small Desktop */
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .who-we-are-container {
-        padding: 30px 20px;  /* Adjust padding for laptops */
+        padding: 30px 20px;
+        /* Adjust padding for laptops */
     }
-
     .title {
-        font-size: 42px;  /* Adjust font size for laptops */
+        font-size: 42px;
+        /* Adjust font size for laptops */
     }
-
     .description {
-        font-size: 15px;  /* Adjust font size for laptops */
-        max-width: 700px;  /* Make description a bit wider */
-        text-align: left;  /* Keep text aligned to left */
+        font-size: 15px;
+        /* Adjust font size for laptops */
+        max-width: 700px;
+        /* Make description a bit wider */
+        text-align: left;
+        /* Keep text aligned to left */
     }
 }
 
+
 /* Media Query for Mobile */
+
 @media (max-width: 480px) {
     .who-we-are-container {
-        padding: 15px 10px;  /* Reduced padding for mobile */
+        padding: 15px 10px;
+        /* Reduced padding for mobile */
     }
-
     .title {
-        font-size: 28px;  /* Reduce title font size further */
+        font-size: 28px;
+        /* Reduce title font size further */
     }
-
     .description {
-        font-size: 12px;  /* Smaller font size on mobile */
-        text-align: center;  /* Center-align on mobile */
-        margin-right: 0;  /* Remove right margin */
+        font-size: 12px;
+        /* Smaller font size on mobile */
+        text-align: center;
+        /* Center-align on mobile */
+        margin-right: 0;
+        /* Remove right margin */
     }
 }

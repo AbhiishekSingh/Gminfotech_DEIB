@@ -3,21 +3,21 @@ import "./Services4.css";
 
 const services4 = [
   {
-    title: "3 Session Anti-Bias Program",
+    title: "Employee Resource Groups (ERGs)",
     description:
-      "Launch a comprehensive program that actually reduces biases, fosters belonging, and leaves participants with concrete tools to create more inclusive workplaces.",
+      "Strengthen communities and voices within your workplace.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/3-Session-Anti-Bias-Program.png", 
   },
   {
-    title: "Managing for Belonging Workshop",
+    title: "Psychological Safety & Well-being ",
     description:
-      "Teach managers how to increase psychological safety, authenticity, and connection on teams.",
+      "Create trust, openness, and support.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/Managing-for-Belonging-Workshop.png", 
   },
   {
-    title: "Undermining Bias in Hiring Training",
+    title: "Recognition & Inclusive Policies ",
     description:
-      "Train hiring managers and interviewers to recognize and challenge common biases in order to consistently hire the best person for the job.",
+      "Ensure employees feel seen, heard, and valued.",
     icon: "https://s3.us-east-1.amazonaws.com/peoplism.s8/services/_70x70_fit_center-center_none/DEIB-Committee-Optimization.png", 
   },
   {

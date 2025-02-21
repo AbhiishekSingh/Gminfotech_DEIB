@@ -1,17 +1,23 @@
 /* Navbar Container */
+
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: white;
-    width: 100%;   /* Ensure it's constrained to 100% of the screen width */
+    width: 100%;
+    /* Ensure it's constrained to 100% of the screen width */
     margin: 0;
-    padding: 16px 20px; /* Adjusted padding to prevent overflow */
-    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
-     /* Prevents any element from overflowing */
+    padding: 16px 20px;
+    /* Adjusted padding to prevent overflow */
+    box-sizing: border-box;
+    /* Ensures padding doesn't cause overflow */
+    /* Prevents any element from overflowing */
 }
 
+
 /* Logo */
+
 .nav-logo {
     display: flex;
     align-items: center;
@@ -27,7 +33,9 @@
     font-weight: 600;
 }
 
+
 /* Navigation Links */
+
 .nav-links {
     display: flex;
     gap: 24px;
@@ -49,7 +57,9 @@
     color: black;
 }
 
+
 /* Dropdown Menu */
+
 .nav-dropdown-menu {
     position: absolute;
     top: 100%;
@@ -72,12 +82,16 @@
     background: #f4f4f4;
 }
 
+
 /* Show dropdown on hover */
+
 .nav-dropdown:hover .nav-dropdown-menu {
     display: block;
 }
 
+
 /* Contact Button */
+
 .nav-contact-btn {
     background: #064e3b;
     height: 50px;
@@ -94,18 +108,19 @@
     opacity: 0.8;
 }
 
+
 /* Mobile and Tablet Styles */
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         align-items: flex-start;
-        padding: 16px 20px; /* Prevent overflow */
+        padding: 16px 20px;
+        /* Prevent overflow */
     }
-
     .nav-logo {
         margin-bottom: 16px;
     }
-
     /* Mobile Menu Toggle */
     .nav-mobile-menu {
         display: flex;
@@ -113,14 +128,12 @@
         gap: 5px;
         cursor: pointer;
     }
-
     .nav-mobile-menu span {
         background-color: #064e3b;
         height: 3px;
         width: 30px;
         border-radius: 3px;
     }
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -130,33 +143,27 @@
         align-items: flex-start;
         margin-top: 16px;
     }
-
     /* Show links when the menu is open */
     .nav-links.active {
         display: flex;
     }
-
     .nav-links li {
         width: 100%;
     }
-
     .nav-links a {
         padding: 12px 24px;
         width: 100%;
         text-align: left;
     }
-
     .nav-dropdown-menu {
         position: static;
         width: 100%;
         box-shadow: none;
         padding: 0;
     }
-
     .nav-dropdown-menu a {
         padding: 12px 24px;
     }
-
     .nav-contact-btn {
         width: 100%;
         text-align: center;

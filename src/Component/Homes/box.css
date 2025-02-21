@@ -16,8 +16,8 @@
 }
 
 .description-add6 {
-    font-size: 1rem;
-    color: #666;
+    font-size: 1.1rem;
+    color: #060606;
     max-width: 600px;
     margin-bottom: 40px;
 }
@@ -30,7 +30,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    background-color: #F9F7F3;
+    background-color: #f6f5f4;
     padding: 40px;
     border-radius: 15px;
     width: 100%;
@@ -57,7 +57,7 @@
 }
 
 .text-add6 {
-    color: #666;
+    color: #0d0d0d;
     margin-bottom: 20px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .inclusion-add6 {
-    background-color: #C5CBE3;
+    background-color: #a6b5f1;
     color: white;
 }
 

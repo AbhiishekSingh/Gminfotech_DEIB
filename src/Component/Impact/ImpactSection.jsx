@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./ImpactSection.css";
 
 export default function ImpactSection() {
@@ -10,7 +11,7 @@ export default function ImpactSection() {
           Join leading companies putting <strong>DEIB</strong> at the forefront of their businesses
         </p>
       </div>
-      <button className="impact-button1">Get in touch</button>
+      <Link to="/Contact" className="impact-button1">Get in touch</Link>
     </div>
   );
 }

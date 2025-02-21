@@ -16,8 +16,8 @@ const About = () => {
       </div>
 
       {/* Description */}
-      <p className="description">
-        Peoplism consultants are subject matter experts with deep experience in HR, learning and development, psychology, change management, and data science.
+      <p className="about-description">
+      We are a <b>boutique consulting and training firm</b> dedicated to embedding <b>Diversity, Equity, Inclusion, and Belonging (DEIB)</b> into the core of every organization. As a <b>startup with a bold vision,</b> we bring <b>fresh, innovative, and customized</b> solutions that drive <b>real business impact.</b>
       </p>
 
       {/* Divider */}

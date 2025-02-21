@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "./CaseStudies.css";
 
 export default function CaseStudies() {
@@ -44,7 +45,7 @@ export default function CaseStudies() {
             <img src={study.logo} alt={study.logo} className="logo" />
             <h3 className="title">{study.title}</h3>
             <p className="details">{study.details}</p>
-            <button className="read-more">Read case study</button>
+            <Link to="/Contact" className="read-more">Read case study</Link>
           </div>
           <img src={study.image} alt={study.title} className="image" />
         </div>

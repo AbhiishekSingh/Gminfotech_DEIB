@@ -1,14 +1,11 @@
+import { Link } from "react-router-dom";
 import './DiversitySection.css'
 
 function DiversitySection() {
   return (
     <div className="diversity-container-add3">
-      {/* Horizontal Line */}
       <hr className="divider-add3" />
-
-      {/* Main Content */}
       <div className="content-add3">
-        {/* Left Section */}
         <div className="left-section-add3">
           <div className="toggle-title-add3">
             <div className="toggle-switch-add3">
@@ -16,14 +13,12 @@ function DiversitySection() {
             </div>
             <h2 className="title-add3">Diversity</h2>
           </div>
-          <button className="cta-button-add3">Get in touch</button>
+          <Link to="/Contact" className="cta-button-add3">Get in touch</Link>
         </div>
-
-        {/* Right Section - Testimonial */}
         <div className="testimonial-card-add3">
           <span className="quote-symbol-add3">"</span>
           <p className="testimonial-text-add3">
-            "Peoplism helped us identify where we could adopt more inclusive hiring processes,
+            "DEIB Innovation helped us identify where we could adopt more inclusive hiring processes,
             and were instrumental in helping us roll out those changes to hiring teams. As a
             result, we've improved alignment between recruiting and hiring managers, reduced bias
             in our processes, and built a more diverse company."
@@ -37,4 +32,4 @@ function DiversitySection() {
   )
 }
 
-export default DiversitySection
+export default DiversitySection;
