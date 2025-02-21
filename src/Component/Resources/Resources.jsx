@@ -7,8 +7,8 @@ import BlogGrid from "./BlogGrid";
 
 const Resources = () => {
   return (
-    <div>
     <div className="resources-container">
+    <div >
       <div className="resources-text">
         Resources by <br /> us for <span className="italic-text">you <span className="underline"></span></span>
       </div>

@@ -1,51 +1,48 @@
 /* Full Section Container */
-
 .diversity-container-add3 {
-    padding: 50px 100px;
+    padding: 50px 10%;
     background-color: white;
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-
 /* Horizontal Line */
-
 .divider-add3 {
     width: 80%;
     border: none;
     border-top: 1px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-
 /* Content Layout */
-
 .content-add3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-
 /* Left Section */
-
 .left-section-add3 {
     display: flex;
     flex-direction: column;
-    gap: 250px;
-    margin-left: 150px;
+    gap: 60px;
+    flex: 1;
+    min-width: 280px;
+    align-items: center;
 }
 
+/* Toggle Switch */
 .toggle-title-add3 {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
-
-/* Toggle Switch */
 
 .toggle-switch-add3 {
     position: relative;
@@ -68,73 +65,67 @@
     left: 7px;
 }
 
-
 /* Title */
-
 .title-add3 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 400;
     color: black;
 }
 
-
 /* CTA Button */
-
 .cta-button-add3 {
     background-color: #1F4637;
     color: white;
     font-weight: bold;
-    padding: 16px 36px;
+    padding: 14px 28px;
     border-radius: 30px;
     border: none;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .cta-button-add3:hover {
     background-color: #16392B;
+    transform: scale(1.05);
 }
 
-
 /* Testimonial Card */
-
 .testimonial-card-add3 {
-    margin-right: 200px;
     background-color: #1F4637;
     color: white;
     padding: 40px;
     border-radius: 16px;
     max-width: 500px;
-    position: relative;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1;
+    min-width: 280px;
 }
 
 .quote-symbol-add3 {
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .testimonial-text-add3 {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-top: 16px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 10px;
 }
 
 .author-name-add3 {
-    margin-top: 25px;
+    margin-top: 15px;
     font-style: italic;
     font-weight: bold;
 }
 
 .author-role-add3 {
-    font-size: 16px;
+    font-size: 0.9rem;
     color: lightgray;
 }
 
-
 /* Logo Icon */
-
 .logo-icon-add3 {
     position: absolute;
     bottom: 15px;
@@ -146,18 +137,78 @@
     transform: rotate(45deg);
 }
 
-
-/* Media Queries */
-
+/* Responsive Design */
 @media (max-width: 1024px) {
     .content-add3 {
         flex-direction: column;
-        gap: 40px;
+        align-items: center;
+        text-align: center;
     }
+
     .testimonial-card-add3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .left-section-add3 {
+        gap: 40px;
+        text-align: center;
+    }
+
+    .title-add3 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-text-add3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .diversity-container-add3 {
+        padding: 40px 5%;
+    }
+
+    .title-add3 {
+        font-size: 1.6rem;
+    }
+
+    .testimonial-card-add3 {
+        padding: 30px;
+    }
+
+    .testimonial-text-add3 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .cta-button-add3 {
+        font-size: 0.9rem;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .diversity-container-add3 {
+        padding: 30px 5%;
+    }
+
+    .title-add3 {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-card-add3 {
+        padding: 25px;
         width: 100%;
     }
-    .diversity-container-add3 {
-        padding: 30px 20px;
+
+    .testimonial-text-add3 {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .cta-button-add3 {
+        font-size: 0.85rem;
+        padding: 10px 20px;
     }
 }

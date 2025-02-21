@@ -1,5 +1,5 @@
   import React, { useState } from "react";
-  import { FaTwitter, FaLinkedin } from "react-icons/fa";
+  import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
   import "./User.css";
 
   const teamMembers = [
@@ -135,60 +135,53 @@ With years of expertise in HR, DEIB strategies, and organizational transformatio
 
   const Team = () => {
     const [expandedIndex, setExpandedIndex] = useState(null);
-
+  
     const toggleDetails = (index) => {
       setExpandedIndex(expandedIndex === index ? null : index);
     };
-
+  
     return (
       <div className="team-container">
-    <hr className="top-divider" />
-    <h2 className="meet-the-team1">Meet Our Team</h2> {/* Added heading here */}
-    <div className="team-grid">
-      {teamMembers.map((member, index) => (
-        <div key={index} className="team-member">
-          <img src={member.image} alt={member.name} className="profile-image" />
-          <h3 className="member-name">{member.name}</h3>
-          <p className="member-role">{member.role}</p>
-          <button className="expand-button" onClick={() => toggleDetails(index)}>
-            {expandedIndex === index ? "✕" : "+"}
-          </button>
-
-          {/* Details section stays inside but follows layout rules */}
-          {expandedIndex === index && (
-            <div className="details-container">
-              <div className="details-left">
-                <h4 className="connect-heading">Connect</h4>
-                <div className="social-links">
-                  <a href={member.social.twitter} target="_blank" rel="noopener noreferrer">
-                    <img src="https://www.iconpacks.net/icons/1/free-twitter-icon-117-thumb.png" alt="Twitter" className="social-icon" />
-                  </a>
-                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.icons8.com/ios11/512/linkedin.png" alt="LinkedIn" className="social-icon1" />
-                  </a>
-                  <a href={member.social.Instagram} target="_blank" rel="noopener noreferrer">
-                    <img src="https://pixsector.com/cache/200e7bcc/av16efeffeed4418c90c1.png" alt="Instagram" className="social-icon1" />
-                  </a>
-                </div>
-              </div>
-              <div className="details-right">
-                <p className="details-text">{member.details}</p>
-                {member.questions.map((q, idx) => (
-                  <div key={idx} className="question-answer">
-                    <span className="emoji">{q.emoji}</span>
-                    <strong>{q.question}</strong>
-                    <p>{q.answer}</p>
+        <hr className="top-divider" />
+        <h2 className="meet-the-team1">Meet Our Team</h2>
+        <div className="team-grid">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="team-member">
+              <img src={member.image} alt={member.name} className="profile-image" />
+              <h3 className="member-name">{member.name}</h3>
+              <p className="member-role">{member.role}</p>
+              <button className="expand-button" onClick={() => toggleDetails(index)}>
+                {expandedIndex === index ? "✕" : "+"}
+              </button>
+              {expandedIndex === index && (
+                <div className="details-container">
+                  <div className="details-left">
+                    <h4 className="connect-heading">Connect</h4>
+                    <div className="social-links">
+                      <a href={member.social.twitter} target="_blank" rel="noopener noreferrer">
+                        <FaTwitter className="social-icon" />
+                      </a>
+                      <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="social-icon" />
+                      </a>
+                    </div>
                   </div>
-                ))}
-              </div>
+                  <div className="details-right">
+                    <p className="details-text">{member.details}</p>
+                    {member.questions.map((q, idx) => (
+                      <div key={idx} className="question-answer">
+                        <strong>{q.question}</strong>
+                        <p>{q.answer}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-          )}
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-
+      </div>
     );
   };
-
+  
   export default Team;

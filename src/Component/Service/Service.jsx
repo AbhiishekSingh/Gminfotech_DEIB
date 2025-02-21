@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Service.css";
+import "./Services.css";
 import Home from "../Homes/Home";
 import Assessment from "./Assessment";
 import DiversitySection from "./DiversitySection";
@@ -27,7 +27,7 @@ const Service = () => {
           </p>
         </div>
       </div>
-      <img className="service-image1" src="https://peoplism.com/assets/images/services-illo-1300.avif" alt="" />
+      {/* <img className="service-image1" src="https://peoplism.com/assets/images/services-illo-1300.avif" alt="" /> */}
       <div className="service-deib-container">
         <div className="service-deib-content">
           <h2 className="service-deib-title">DEIB Assessment & Roadmap</h2>

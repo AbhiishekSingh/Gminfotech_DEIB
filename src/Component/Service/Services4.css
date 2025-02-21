@@ -1,16 +1,9 @@
 .services4-container {
     text-align: center;
     padding: 20px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
 }
-
-
-/* .services2-divider {
-    width: 50%;
-    margin: 20px auto;
-    border: 1px solid #000;
-} */
 
 .services4-title {
     text-align: left;
