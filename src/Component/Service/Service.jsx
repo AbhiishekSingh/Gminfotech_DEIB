@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
-import Home from "../Homes/Home";
 import Assessment from "./Assessment";
 import DiversitySection from "./DiversitySection";
 import Services from "./Services";

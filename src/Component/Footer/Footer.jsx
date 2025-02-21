@@ -19,9 +19,9 @@ const Footer = () => {
        
         <div className="footer-links-container">
         <div className="make-footer-space"> 
-        <ul className="footer-links">
+        {/* <ul className="footer-links">
           ©2025 DEIB Innovation, LLC. All rights reserved. | Site by Series Eight
-        </ul>
+        </ul> */}
         </div>
          <div className="make-footer-space"> 
           <ul className="footer-links">
